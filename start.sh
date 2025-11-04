@@ -15,11 +15,6 @@
 # limitations under the License.
 #
 
-if [ -d home ]; then
-  echo "ERROR: this project contains a 'home' directory. It is probably a legacy project. Use the run-*.sh scripts instead."
-  exit
-fi
-
 for a in "$@"
 do
   ARGS="$ARGS'$a' "

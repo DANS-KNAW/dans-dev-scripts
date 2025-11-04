@@ -15,11 +15,6 @@
 # limitations under the License.
 #
 
-if [ -d home ]; then
-  echo "ERROR: this project contains a 'home' directory. It is probably a legacy project. Use the run-*.sh scripts instead."
-  exit
-fi
-
 ETCDIR=etc
 DATADIR=data
 INIT_DEBUG_ENV_SCRIPT=./debug-init-env.sh
