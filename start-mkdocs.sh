@@ -16,4 +16,7 @@ echo "Installing dependencies for doc site..."
 pip3 install -r .github/workflows/mkdocs/requirements.txt
 echo "...OK"
 
+# Downgrade click to version 8.2.1 to work around https://github.com/mkdocs/mkdocs/issues/4032
+pip3 install "click==8.2.1"
+
 mkdocs serve -a localhost:$PORT
