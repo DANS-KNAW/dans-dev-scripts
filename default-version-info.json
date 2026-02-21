@@ -1,0 +1,12 @@
+{
+  "version-info": {
+    "user": {
+      "name": "John Doe",
+      "email": "jdoe@example.com"
+    },
+    "message": "Commit message for version"
+  },
+  "object-version-properties": {
+    "packaging-format": "DANS RDA BagPack/1.0.0"
+  }
+}
