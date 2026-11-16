@@ -7,6 +7,6 @@
     "message": "Commit message for version"
   },
   "object-version-properties": {
-    "packaging-format": "DANS RDA BagPack/1.0.0"
+    "packaging-format": "DANS RDA BagPack/1.1.0"
   }
 }
