@@ -15,4 +15,4 @@
 # limitations under the License.
 #
 
-QUIET="-q" start.sh $@
+QUIET="-q" start.sh "$@"

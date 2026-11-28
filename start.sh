@@ -15,9 +15,13 @@
 # limitations under the License.
 #
 
+# Each argument is passed to exec:java wrapped in single quotes, so that arguments containing spaces are kept intact. A single quote inside an argument
+# is written as '"'"' (close quote, quoted single quote, reopen quote); exec:java joins the adjacent quoted parts into one argument.
+SQ="'"
+ESCAPED_SQ="'\"'\"'"
 for a in "$@"
 do
-  ARGS="$ARGS'$a' "
+  ARGS="$ARGS'${a//$SQ/$ESCAPED_SQ}' "
 done
 
 if [ -z $QUIET ]; then
